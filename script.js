@@ -27,6 +27,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-  dots[slideIndex-1].scrollIntoView();
+  dots[slideIndex-1].scrollIntoView({
+    behavior: 'smooth', // 'auto' or 'smooth'
+    block: 'center',    // 'start', 'center', 'end' or 'nearest'
+    inline: 'center'    // 'start', 'center', 'end' or 'nearest'
+  });
 }
 

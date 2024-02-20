@@ -127,3 +127,35 @@
     font-size: 3.5vh;
     margin: 15% auto auto auto;
   }
+
+  #p1 {
+    max-width: 50%;
+  }
+
+
+  @media screen and (orientation:portrait){
+
+    .slide-container {
+        height: 28vh;
+        padding: 10% 0 2% 0;
+      }
+
+      .row {
+        white-space: wrap;
+        height: fit-content;
+      }
+
+      .column {
+        height: 8vh;
+        width: 23vw;
+      }
+
+      .title-card {
+        font-size: 2vh;
+      }
+
+      #p1 {
+        max-width: 70%;
+      }
+
+  }
