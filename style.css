@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(./images/newWoodBackground2.jpg);
+    background-size: 100%;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  .slide-container {
+    height: 74vh;
+    padding: 1% 0 2% 0;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  #caption{
+    margin: .5% 0;
+  }
+
+  .row {
+    height: 20vh;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    display: inline-block;
+    width: 16.66%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 19vh;
+    overflow: hidden;
+    border: 3px solid black;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  img{
+    box-shadow: 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5);
+  }
