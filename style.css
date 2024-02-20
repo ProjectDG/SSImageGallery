@@ -13,7 +13,7 @@
   }
 
   .slide-container {
-    height: 68vh;
+    height: 73vh;
     padding: 1% 0 2% 0;
   }
   
@@ -71,16 +71,16 @@
   .caption-container {
     text-align: center;
     background-color: #222;
-    padding: 2px 16px;
+    padding: 1px 16px;
     color: white;
   }
 
   #caption{
-    margin: .5% 0;
+    margin: .1% 0;
   }
 
   .row {
-    height: 20vh;
+    height: 15vh;
     overflow: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -99,9 +99,10 @@
   /* Six columns side by side */
   .column {
     display: inline-block;
-    width: 16.66%;
+    width: 15%;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 19vh;
+    height: 15vh;
+    width: 10vw;
     overflow: hidden;
     border: 2px solid black;
   }
@@ -120,4 +121,9 @@
     box-shadow: 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5);
   }
 
-  
+  .title-card {
+    text-align: center;
+    color: antiquewhite;
+    font-size: .75em;
+    margin: 15% auto auto auto;
+  }
