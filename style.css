@@ -37,7 +37,7 @@
     color: antiquewhite;
     background-color: rgba(0, 0, 0, 0.5);
     height: 15vh;
-    width: 4vw;
+    width: 12.25vw;
     padding-top: 2%;
     overflow: hidden;
     border: 2px solid black;
@@ -198,6 +198,10 @@
     max-width: 31%;
   }
 
+  #p12 {
+    max-width: 39%;
+  }
+
   @media screen and (orientation:portrait){
 
     #landscapePrev,
@@ -262,7 +266,7 @@
       }
     
       #p4 {
-        max-width: 76%;
+        max-width: 74%;
       }
     
       #p5 {
