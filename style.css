@@ -13,8 +13,8 @@
   }
 
   .slide-container {
-    height: 73vh;
-    padding: 1% 0 2% 0;
+    height: 72vh;
+    display: flex;
   }
   
   /* Hide the images by default */
@@ -33,29 +33,42 @@
   .prev,
   .next {
     cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
+    display: inline-block;
     color: antiquewhite;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15vh;
+    width: 4vw;
+    padding-top: 2%;
+    overflow: hidden;
+    border: 2px solid black;
     user-select: none;
     -webkit-user-select: none;
+    text-align: center;
+    font-size: 5vh;
   }
-  
-  /* Position the "next button" to the right */
+
+  .prev {
+    margin-right: .5%;
+  }
+
   .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    margin-left: .5%;
   }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  #landscapePrev,
+  #landscapeNext {
+    display: inline-block;
+  }
+
+  #portraitPrev,
+  #portraitNext {
+    display: none;
   }
   
   /* Number text (1/3 etc) */
@@ -71,8 +84,20 @@
   .caption-container {
     text-align: center;
     background-color: #222;
-    padding: 1px 16px;
+    padding: .5% 8%;
     color: white;
+    margin: .5% 0;
+  }
+
+  #rowContainer {
+    display: flex;
+  }
+
+  .button-container {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 1% 8%;
   }
 
   #caption{
@@ -118,6 +143,7 @@
   }
 
   img{
+    border-radius: 5%;
     box-shadow: 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5), 1px 1px 30px rgb(0, 0, 0, .5);
   }
 
@@ -129,15 +155,75 @@
   }
 
   #p1 {
-    max-width: 50%;
+    max-width: 45%;
   }
 
+  #p2 {
+    max-width: 32%;
+  }
+
+  #p3 {
+    max-width: 38%;
+  }
+
+  #p4 {
+    max-width: 42%;
+  }
+
+  #p5 {
+    max-width: 32%;
+  }
+  
+  #p6 {
+    max-width: 30%;
+  }
+
+  #p7 {
+    max-width: 39%;
+  }
+
+  #p8 {
+    max-width: 44%;
+  }
+
+  #p9 {
+    max-width: 38%;
+  }
+
+  #p10 {
+    max-width: 45%;
+  }
+
+  #p11 {
+    max-width: 31%;
+  }
 
   @media screen and (orientation:portrait){
 
+    #landscapePrev,
+    #landscapeNext {
+      display: none;
+    }
+
+    .prev {
+      margin-right: 0;
+    }
+  
+    .next {
+      margin-left: 0;
+    }
+
+  #portraitPrev,
+  #portraitNext {
+    display: inline-block;
+  }
+
     .slide-container {
         height: 28vh;
-        padding: 10% 0 2% 0;
+      }
+
+      .caption-container {
+        padding-top: 1%;
       }
 
       .row {
@@ -145,9 +231,18 @@
         height: fit-content;
       }
 
-      .column {
+      .column, 
+      .prev,
+      .next {
         height: 8vh;
         width: 23vw;
+      }
+
+      .prev,
+      .next {
+        width: 11vw;
+        padding-top: 2.2vh;
+        font-size: 3vh;
       }
 
       .title-card {
@@ -155,7 +250,51 @@
       }
 
       #p1 {
+        max-width: 85%;
+      }
+    
+      #p2 {
+        max-width: 58%;
+      }
+    
+      #p3 {
+        max-width: 69%;
+      }
+    
+      #p4 {
+        max-width: 76%;
+      }
+    
+      #p5 {
+        max-width: 60%;
+      }
+      
+      #p6 {
+        max-width: 57%;
+      }
+    
+      #p7 {
+        max-width: 72%;
+      }
+    
+      #p8 {
+        max-width: 80%;
+      }
+    
+      #p9 {
         max-width: 70%;
+      }
+    
+      #p10 {
+        max-width: 83%;
+      }
+    
+      #p11 {
+        max-width: 58%;
+      }
+
+      #p12 {
+        max-width: 72%;
       }
 
   }
