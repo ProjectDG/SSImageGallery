@@ -38,7 +38,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     height: 15vh;
     width: 12.25vw;
-    padding-top: 2%;
+    padding: 2.2%;
     overflow: hidden;
     border: 2px solid black;
     user-select: none;
@@ -87,6 +87,7 @@
     padding: .5% 8%;
     color: white;
     margin: .5% 0;
+    font-family: monospace;
   }
 
   #rowContainer {
@@ -150,8 +151,9 @@
   .title-card {
     text-align: center;
     color: antiquewhite;
-    font-size: 3.5vh;
+    font-size: 3vh;
     margin: 15% auto auto auto;
+    font-family: monospace;
   }
 
   #p1 {
@@ -202,6 +204,54 @@
     max-width: 39%;
   }
 
+  #p13 {
+    max-width: 39%;
+  }
+
+  #p14 {
+    max-width: 53%;
+  }
+
+  #p15 {
+    max-width: 43%;
+  }
+
+  #p16 {
+    max-width: 67%;
+  }
+
+  #p17 {
+    max-width: 54%;
+  }
+
+  #p18 {
+    max-width: 61%;
+  }
+
+  #p19 {
+    max-width: 35%;
+  }
+
+  #p20 {
+    max-width: 35%;
+  }
+
+  #p21 {
+    max-width: 30%;
+  }
+
+  #p22 {
+    max-width: 33%;
+  }
+
+  #p23 {
+    max-width: 98%;
+  }
+
+  #p24 {
+    max-width: 70%;
+  }
+
   @media screen and (orientation:portrait){
 
     #landscapePrev,
@@ -244,8 +294,9 @@
 
       .prev,
       .next {
+        text-align: center;
         width: 11vw;
-        padding-top: 2.2vh;
+        padding: 2vh 0;
         font-size: 3vh;
       }
 
@@ -253,52 +304,102 @@
         font-size: 2vh;
       }
 
+      span{
+        font-size: 1.5vh;
+      }
+
       #p1 {
-        max-width: 85%;
-      }
-    
-      #p2 {
-        max-width: 58%;
-      }
-    
-      #p3 {
-        max-width: 69%;
-      }
-    
-      #p4 {
-        max-width: 74%;
-      }
-    
-      #p5 {
-        max-width: 60%;
-      }
-      
-      #p6 {
-        max-width: 57%;
-      }
-    
-      #p7 {
-        max-width: 72%;
-      }
-    
-      #p8 {
-        max-width: 80%;
-      }
-    
-      #p9 {
-        max-width: 70%;
-      }
-    
-      #p10 {
         max-width: 83%;
       }
     
-      #p11 {
+      #p2 {
+        max-width: 56%;
+      }
+    
+      #p3 {
+        max-width: 67%;
+      }
+    
+      #p4 {
+        max-width: 72%;
+      }
+    
+      #p5 {
         max-width: 58%;
+      }
+      
+      #p6 {
+        max-width: 55%;
+      }
+    
+      #p7 {
+        max-width: 69%;
+      }
+    
+      #p8 {
+        max-width: 78%;
+      }
+    
+      #p9 {
+        max-width: 68%;
+      }
+    
+      #p10 {
+        max-width: 82%;
+      }
+    
+      #p11 {
+        max-width: 56%;
       }
 
       #p12 {
-        max-width: 72%;
+        max-width: 70%;
       }
 
+      #p13 {
+        max-width: 69%;
+      }
+
+      #p14 {
+        max-width: 90%;
+      }
+
+      #p15 {
+        max-width: 76%;
+      }
+
+      #p16 {
+        max-width: 97%;
+      }
+
+      #p17 {
+        max-width: 94%;
+      }
+
+      #p18 {
+        max-width: 94%;
+      }
+
+      #p19 {
+        max-width: 63%;
+      }
+    
+      #p20 {
+        max-width: 65%;
+      }
+      #p21 {
+        max-width: 55%;
+      }
+
+      #p22 {
+        max-width: 60%;
+      }
+
+      #p23 {
+        max-width: 98%;
+      }
+
+      #p24 {
+        max-width: 98%;
+      }
   }
